@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GEN X AI - Thank You</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>GEN X AI - Thank You</h1>
+    </header>
+
+    <main>
+        <section class="thank-you-section">
+            <h2>Thank You, {{ name }}!</h2>
+            <p>Your form has been submitted successfully.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

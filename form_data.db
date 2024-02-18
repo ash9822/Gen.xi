@@ -1,0 +1,16 @@
+import sqlite3
+
+# Connect to the SQLite database
+conn = sqlite3.connect('form_data.db')
+cursor = conn.cursor()
+
+# Insert data into the "submissions" table
+name = 'John Doe'
+email = 'john@example.com'
+cursor.execute("INSERT INTO submissions (name, email) VALUES (?, ?)", (name, email))
+
+# Commit the transaction
+conn.commit()
+
+# Close the connection
+conn.close()
